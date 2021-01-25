@@ -1,0 +1,317 @@
+/*
+body
+{
+color: plum; /*FOND DE PAGE COLOR PLUM
+background-color: blue;
+}
+*/
+body
+{
+	font-family: 'source code pro', colibri, serif;
+	margin: 0px;
+	padding: 0px;
+}
+
+h2
+{
+position: fixed;/*FIX DEFILANT PAGE*/	
+display: flex;
+width: 100%;
+justify-content: center;	
+font-size: 40px;	
+font-family: trebuchet ms;
+/*border-radius: 20px;*/
+text-decoration: overline;	
+text-shadow: 3px 3px 3px grey;
+background-color: white;	
+color: red;
+}
+
+nav   /* BARRE DE MENU */
+{
+	display: flex;
+	position: fixed;/*FIX DEFILANT PAGE*/
+	box-shadow: 5px 5px 5px grey;
+	width: 100%;
+	background-color: white;
+	justify-content: center;
+}
+
+nav > ul /* (>)(ul) 1 enfant */
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+nav > ul::after
+{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+nav > ul > li
+{
+	float: left;
+	position: relative; /*position sous-menu enface de chaque menu*/
+}
+
+nav > ul > li > a /* color menu principal */
+{
+	font-size: 20px; /*taille de text menu blanc*/
+    padding: 10px 100px; /*marge EPAISSOUR et ENTRE le text*/
+    color: blue; /*color blanc #fff */
+}
+nav > ul > li:hover a
+{
+	padding: 5px 100px 5px 100px; /*marge autour du text*/
+}
+
+nav li
+{
+    list-style-type: none; /*none enleve deco . */	
+}
+
+.derrulant
+{
+	display: none; /*cache les sous-menu derrulant*/
+}
+
+nav a
+{
+	display: inline-block; /*bloc navigateur*/
+	text-decoration: none; /*none enleve deco ___ */
+}
+
+nav li:hover .derrulant  
+{
+    display: inline-block; /*derrule le sous-menu block*/
+    position: absolute; /*derrule en-face de police*/
+    top: 100%
+    left: 0px;
+    padding: 0px;
+    z-index: 1000;
+}
+
+.derru
+{
+background-color: blue;	
+}
+.derr
+{
+background-color: white;	
+}
+.der
+{
+background-color: red;	
+}
+.de
+{
+background-color: plum;	
+}
+.d
+{
+background-color: grey;	
+}
+
+.derrulant li
+{
+    border-bottom: 1px solid #ccc; /*trais entre polices*/
+}
+
+.derrulant li a
+{
+	padding: 15px 30px; /*TEXT DERROULANT*/
+	font-size: 17px; /*taille text derroulant*/
+	color: #222538; /*color text derroulant blanc*/
+	width: 200px; /*espace pour text deroulant*/
+}
+
+.menu:hover /*flotter*/ 
+{
+border-top: 5px solid #e44d26;
+background-color:  rgba(228, 77, 38, 0.15); /*color fond de police menu*/
+}
+.contact:hover /*flotter*/
+{
+border-top: 5px solid #00070b;
+background-color: rgba(000, 112, 192, 0.15);
+}
+.apropo:hover /*flotter*/
+{
+border-top: 5px solid #f1dc4f;
+background-color: rgba(241, 211, 79, 0.15);
+}
+.actualite:hover
+{
+border-top: 5px solid #bbb;
+background-color: rgba(220, 220, 220, 0.15);
+}
+
+.menu .derrulant 
+{
+background-color: rgb(230, 100, 40); /*color du fond menu deroulant*/
+}
+.contact .derrulant 
+{
+background-color: rgb(000, 160, 240);
+}
+.apropo .derrulant 
+{
+background-color: rgb(250, 215, 100);
+}
+.actualite .derrulant 
+{
+background-color: rgb(250, 120, 60); /*color fond derroulant*/
+}
+
+.derrulant li:hover a
+{
+	color: #EEE; /*text derrulant devien blanc*/
+	font-weight: bold; /*fond GRAS*/
+}
+.menu.derrulant li:hover
+{
+background-color: rgb(210, 77, 60);
+}
+.contact.derrulant li:hover
+{
+background-color: rgb(000, 115, 200);
+}
+.apropo.derrulant li:hover
+{
+background-color: rgb(200, 165, 200);
+}
+.actualite.derrulant li:hover
+{
+background-color: rgb(230, 100, 40);
+}
+
+
+h6
+{
+font-size: 20px;
+text-shadow: 3px 3px 3px grey;	
+font-family: trebuchet ms;	
+text-align: center;	
+color: red;	
+}
+
+p
+{
+text-align: justify;	
+color: black;	
+}
+figure
+{
+display: flex;
+}
+img
+{	
+float: left;
+width: 200px;
+height: 200px;	
+}
+
+.contacto
+{
+/*border-radius: 20px;*/	
+/*border: 2px solid red;*/	
+width: 880px;
+height: 250px;
+border: double;
+margin: auto;
+overflow: auto;
+padding: 10px;		
+background-image: url(pagina.jpg);		
+}
+.membre
+{
+	
+overflow: auto; 	
+border: double;
+margin: auto;
+padding: 10px;	
+background-color: oldlace;
+}
+.entreprise
+{
+/*border-radius: 20px;*/	
+/*border: 2px solid red;*/	
+border-radius: 20px;
+width: 70%;
+height: 50%;
+border: double;	
+margin: auto;
+overflow: auto;
+padding: 10px;	
+background-color: beige;
+}
+.services
+{
+/*border-radius: 20px;*/	
+/*border: 2px solid red;*/	
+width: 70%;
+height: 50%;
+border: double;	
+margin: auto;
+overflow: auto;
+padding: 10px;	
+background-color: khaki;
+}
+.photoprojets
+{
+display: flex;
+flex-wrap: wrap;
+padding: 40px;	
+}
+.projets
+{	
+/*border-radius: 20px;*/	
+/*border: 2px solid red;*/	
+width: 70%;
+height: 50%;
+border: double;
+overflow: auto;
+margin: auto;
+padding: 10px;	
+background-color: khaki;	
+}
+
+.resto /*titre menu fix*/
+{
+text-shadow: 3px 3px 3px grey;	
+font-size: 30px;	
+color: grey;	
+}
+.bola /*bola menu fix*/
+{
+width: 30px;
+height: 30px;	
+}
+.loupe /*loupe menu fix*/
+{	
+width: 30px;
+height: 30px;	
+}
+.utilisateurs /*utilisateurs carlos luis raul*/
+{
+font-size: 20px;	
+text-align: center;	 	
+color: blue;
+font-family: trebuchet ms;	
+}
+
+div
+{	
+text-align: center;		
+color: black;	
+}
+
+footer
+{
+text-align: center;	
+}
+
+
+
